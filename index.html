@@ -1,78 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lemonade Electronics | Corporate Hub</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        html { scroll-behavior: smooth; }
-        .tech-card:hover { border-color: #facc15; background-color: #fafafa; transform: translateY(-2px); transition: all 0.3s ease; }
-        .logo-img { max-height: 50px; width: auto; }
-        /* Custom color override for specific Tailwind classes */
-        .text-custom-blue { color: #0083c4; }
-        .bg-custom-blue { background-color: #0083c4; }
-        .border-custom-blue { border-color: #0083c4; }
-    </style>
-</head>
-<body class="bg-white text-[#0083c4] font-sans">
 
-    <nav class="border-b border-gray-100 py-6 px-8 flex justify-between items-center sticky top-0 bg-white/90 backdrop-blur-md z-50">
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lemonade Lighting | Fresh Designs. Zesty Solutions.</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        html { scroll-behavior: smooth; }
+
+        
+
+        /* The requested header/logo color */
+
+        .bg-header-navy { background-color: #0b0526; }
+
+        
+
+        /* Darker black background for body */
+
+        .bg-deep-black { background-color: #050505; }
+
+        
+
+        .tech-card:hover { 
+
+            border-color: #facc15; 
+
+            background-color: #111111; 
+
+            transform: translateY(-2px); 
+
+            transition: all 0.3s ease; 
+
+        }
+
+
+
+        /* Increased sizes for logos */
+
+        .logo-nav { height: 80px; width: auto; }
+
+        .logo-footer { height: 100px; width: auto; }
+
+    </style>
+
+</head>
+
+<body class="bg-deep-black text-white font-sans">
+
+
+
+    <!-- Navigation Header -->
+
+    <nav class="border-b border-gray-800 py-4 px-8 flex justify-between items-center sticky top-0 bg-header-navy z-50">
+
         <div class="flex items-center gap-3">
-            <img src="https://i.ibb.co/qMv1zRmD/Screenshot-2026-04-13-014151.png" alt="Lemonade Logo" class="logo-img">
+
+            <img src="https://i.ibb.co/TxnK2DZ1/Screenshot-2026-05-03-180455.png" alt="Lemonade Lighting Logo" class="logo-nav">
+
         </div>
+
         <div class="hidden md:flex gap-8 font-medium text-sm uppercase tracking-widest">
-            <a href="#contact" class="hover:text-yellow-500 transition border-b-2 border-yellow-400 text-[#0083c4]">Contact</a>
+
+            <a href="#services" class="hover:text-yellow-500 transition text-white">Services</a>
+
+            <a href="#stack" class="hover:text-yellow-500 transition text-white">The Stack</a>
+
+            <a href="#gear" class="hover:text-yellow-500 transition text-white">Our Gear</a>
+
+            <a href="#contact" class="hover:text-yellow-500 transition border-b-2 border-yellow-400 text-white">Book Now</a>
+
         </div>
+
     </nav>
 
-    <header class="py-24 px-8 border-b border-gray-50">
+
+
+    <!-- Hero Section -->
+
+    <header class="py-24 px-8 border-b border-gray-900">
+
         <div class="max-w-5xl mx-auto">
-            <span class="bg-[#0083c4] text-yellow-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">IMPORTANT NOTICE</span>
-            <h1 class="text-6xl md:text-8xl font-black mt-6 mb-8 leading-tight text-[#0083c4]">
-                We are... <br>
-                <span class="text-yellow-400 underline decoration-[#0083c4]">Upgrading.</span>
+
+            <span class="bg-[#0083c4] text-yellow-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Live Requests & Booking</span>
+
+            <h1 class="text-6xl md:text-8xl font-black mt-6 mb-8 leading-tight text-white">
+
+                Fresh Designs. <br>
+
+                <span class="text-yellow-400 underline decoration-white">Zesty Solutions.</span>
+
             </h1>
-            <p class="text-xl text-gray-500 max-w-2xl leading-relaxed">
-                Updated website and branding coming soon. For now, buy me a coffee! (linked below 😁)
+
+            <p class="text-xl text-gray-400 max-w-2xl leading-relaxed">
+
+                At <strong>Lemonade Lighting</strong>, we don’t just set up lights; we set the mood. From neon-drenched dance floors to sophisticated ambient glows, we provide professional lighting for house parties, weddings, and raves.
+
             </p>
+
+            <div class="mt-10 flex gap-4">
+
+                <a href="#contact" class="bg-[#0083c4] text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-yellow-400 hover:text-[#0083c4] transition shadow-lg">Get a Quote</a>
+
+            </div>
+
         </div>
+
     </header>
 
 
-    
-    <section id="contact" class="py-24 px-8 bg-gray-50">
-        <div class="max-w-4xl mx-auto bg-[#0083c4] text-white rounded-3xl p-12 relative overflow-hidden">
-            <div class="absolute -top-10 -right-10 w-40 h-40 bg-yellow-400 rounded-full opacity-20"></div>
-            <div class="relative z-10">
-                <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter">Get in Touch</h2>
-                <p class="text-gray-100 mb-10 text-lg opacity-80">Direct lines to the Lemonade Electronics team.</p>
-                <div class="grid md:grid-cols-2 gap-8 text-[#0083c4]">
-                    <div class="flex items-center gap-4 p-6 bg-white rounded-xl">
-                        <div>
-                            <p class="text-xs uppercase tracking-widest text-gray-400 font-bold">Whatsapp</p>
-                            <a href="tel:07934906658" class="text-xl font-black hover:text-yellow-500 transition">+44 7934906658</a>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4 p-6 bg-white rounded-xl">
-                        <div>
-                            <p class="text-xs uppercase tracking-widest text-gray-400 font-bold">Discord</p>
-                            <p class="text-xl font-black tracking-tight uppercase">lemonade_dev</p>
-                        </div>
-                    </div>
+
+    <!-- Services Grid -->
+
+    <section id="services" class="py-20 px-8 bg-[#0a0a0a]">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl font-bold tracking-tight mb-12 text-white">The Vibe Menu</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="group block bg-[#111111] p-8 rounded-2xl border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:border-yellow-400 shadow-sm">
+
+                    <div class="text-4xl mb-4">🏠</div>
+
+                    <h3 class="text-2xl font-bold mb-2 uppercase tracking-tighter text-white">House Parties</h3>
+
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">High-intensity lighting rigs that turn your living room into a VIP club.</p>
+
                 </div>
+
+                <div class="group block bg-[#111111] p-8 rounded-2xl border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:border-yellow-400 shadow-sm">
+
+                    <div class="text-4xl mb-4">💍</div>
+
+                    <h3 class="text-2xl font-bold mb-2 uppercase tracking-tighter text-white">Weddings</h3>
+
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Sophisticated uplighting and elegant washes to make your big day look timeless.</p>
+
+                </div>
+
+                <div class="group block bg-[#111111] p-8 rounded-2xl border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:border-yellow-400 shadow-sm">
+
+                    <div class="text-4xl mb-4">🔊</div>
+
+                    <h3 class="text-2xl font-bold mb-2 uppercase tracking-tighter text-white">Raves & Events</h3>
+
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Full-scale laser shows, moving heads, and strobe effects for maximum energy.</p>
+
+                </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <footer class="bg-white text-[#0083c4] py-16 px-8 border-t border-gray-100 flex flex-col items-center gap-6">
-        <img src="https://i.ibb.co/qMv1zRmD/Screenshot-2026-04-13-014151.png" alt="Lemonade Logo" class="h-12 w-auto">
-        <div class="text-center">
-            <p class="text-gray-500 text-xs mt-1 uppercase tracking-widest font-bold">
-                &copy; 2023-26 Lemonade Electronics // All Rights Reserved
-            </p>
+
+
+    <!-- The Lemonade Stack Section -->
+
+    <section id="stack" class="py-24 px-8 bg-deep-black border-b border-gray-900">
+
+        <div class="max-w-6xl mx-auto text-center">
+
+            <h2 class="text-4xl font-black uppercase tracking-tighter text-white">The Lemonade <span class="text-yellow-500">Stack</span></h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+
+                <div class="p-8 border border-gray-800 rounded-xl tech-card bg-[#0d0d0d]">
+
+                    <h4 class="text-xl font-bold mb-3 text-white">Light Programming</h4>
+
+                    <p class="text-sm text-gray-400">Advanced DMX sequencing and software-driven choreography.</p>
+
+                </div>
+
+                <div class="p-8 border border-gray-800 rounded-xl tech-card bg-[#0d0d0d]">
+
+                    <h4 class="text-xl font-bold mb-3 text-white">Rigging & Setup</h4>
+
+                    <p class="text-sm text-gray-400">Professional hardware installation and safe rigging impact.</p>
+
+                </div>
+
+                <div class="p-8 border border-gray-800 rounded-xl tech-card bg-[#0d0d0d]">
+
+                    <h4 class="text-xl font-bold mb-3 text-white">Running Shows</h4>
+
+                    <p class="text-sm text-gray-400">Real-time light engineering and live show control.</p>
+
+                </div>
+
+                <div class="p-8 border border-gray-800 rounded-xl tech-card bg-[#0d0d0d]">
+
+                    <h4 class="text-xl font-bold mb-3 text-white">Prop Fabrication</h4>
+
+                    <p class="text-sm text-gray-400">3D printing and custom electronics for bespoke stage elements.</p>
+
+                </div>
+
+            </div>
+
         </div>
+
+    </section>
+
+
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="py-24 px-8 bg-deep-black">
+
+        <div class="max-w-4xl mx-auto bg-header-navy text-white rounded-3xl p-12 relative overflow-hidden">
+
+            <div class="relative z-10">
+
+                <h2 class="text-4xl font-black mb-4 uppercase tracking-tighter">Get in Touch</h2>
+
+                <div class="grid md:grid-cols-2 gap-8 text-[#0083c4] mt-10">
+
+                    <div class="flex items-center gap-4 p-6 bg-white rounded-xl">
+
+                        <div>
+
+                            <p class="text-xs uppercase tracking-widest text-gray-400 font-bold">Whatsapp</p>
+
+                            <a href="tel:07934906658" class="text-xl font-black transition">+44 7934906658</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center gap-4 p-6 bg-white rounded-xl">
+
+                        <div>
+
+                            <p class="text-xs uppercase tracking-widest text-gray-400 font-bold">Discord</p>
+
+                            <p class="text-xl font-black tracking-tight uppercase">lemonade_dev</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-header-navy text-white py-16 px-8 border-t border-gray-800 flex flex-col items-center gap-6">
+
+        <img src="https://i.ibb.co/TxnK2DZ1/Screenshot-2026-05-03-180455.png" alt="Lemonade Lighting Logo" class="logo-footer">
+
+        <p class="text-gray-400 text-xs uppercase tracking-widest font-bold">
+
+            &copy; 2023-26 Lemonade Lighting // All Rights Reserved
+
+        </p>
+
     </footer>
 
+
+
 </body>
+
 </html>
